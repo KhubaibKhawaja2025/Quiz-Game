@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz Game | Khubaib Khawaja</title>
+  </head>
+  <body>
+    <div class="start-screen-container" id="start-screen-container">
+      <h1>Quiz Time!</h1>
+      <p>
+        Let's check your IQ with some amazing questions. Let's see what you got.
+      </p>
+      <button id="start-quiz-btn">Start Quiz</button>
+    </div>
+    <div id="first-question-container" class="first-question-section remove">
+      <div class="question" id="first-question">Question goes here</div>
+      <div class="question-and-score-info">
+        <p>
+          Question <span id="current-question"></span> of
+          <span id="max-questions"></span>
+        </p>
+        <p>Score: <span id="score"></span></p>
+      </div>
+      <div class="answers" id="answers-container">
+        <button class="answer"></button>
+        <button class="answer"></button>
+        <button class="answer"></button>
+        <button class="answer"></button>
+      </div>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+    </div>
+    <div class="end-results hide" id="end-result">
+      <h1 id="result-text"></h1>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
